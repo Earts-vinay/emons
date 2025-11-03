@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import HeroSection from './components/HeroSection';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div>
+      <HeroSection />
+      <div style={{ height: '200vh',marginTop: "50rem", background: '#f5f5f5' }}>
+        <p style={{ padding: '2rem',mt:10, textAlign: 'center' }}>
+          Scroll down to see the video segment switch and overlay fade effect.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 }

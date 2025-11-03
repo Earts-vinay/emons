@@ -1,0 +1,21 @@
+.hero-video {
+  position: fixed; /* video stays behind all sections */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-section {
+  height: 100vh; /* full viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  background: rgba(0,0,0,0.3); /* optional overlay for readability */
+}
