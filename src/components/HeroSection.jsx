@@ -167,6 +167,20 @@ const HeroSection = () => {
         }}
       />
 
+ {/* Linear gradient overlay */}
+      <div
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          zIndex: -1,
+          background:
+            "linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.2))",
+        }}
+      ></div>
+
       {/* Segment labels */}
       {segments.map((segment, index) => (
         <div
